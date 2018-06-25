@@ -36,6 +36,16 @@ public class AndroidEasyRate {
             }
         });
 
+        //close button
+        ImageView closebutton = (ImageView) dialog.findViewById(R.id.cross);
+        closebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+
         dialog.show();
 
     }
@@ -55,7 +65,17 @@ public class AndroidEasyRate {
 
         //rate button
         LinearLayout dialogButton = (LinearLayout) dialog.findViewById(R.id.ratebtn);
-        dialogButton.setBackgroundColor(rate_button_color);
+        dialogButton.setBackgroundColor(context.getResources().getColor(rate_button_color));
+
+        //close button
+        ImageView closebutton = (ImageView) dialog.findViewById(R.id.cross);
+        closebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +118,9 @@ public class AndroidEasyRate {
 
         //rate button
         LinearLayout dialogButton = (LinearLayout) dialog.findViewById(R.id.ratebtn);
-        dialogButton.setBackgroundColor(rate_button_color);
+        dialogButton.setBackgroundColor(context.getResources().getColor(rate_button_color));
+
+
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +141,16 @@ public class AndroidEasyRate {
                 dialog.dismiss();
             }
         });
+
+        //close button
+        ImageView closebutton = (ImageView) dialog.findViewById(R.id.cross);
+        closebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
 
         ImageView star1 = (ImageView) dialog.findViewById(R.id.star1);
         ImageView star2 = (ImageView) dialog.findViewById(R.id.star2);
