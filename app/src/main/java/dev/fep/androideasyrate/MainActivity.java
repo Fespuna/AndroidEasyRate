@@ -12,6 +12,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AndroidEasyRate.ShowDialog(this);
+   /*     AndroidEasyRate.ShowDialog(this);  */
+
+  /*      AndroidEasyRate.ShowCustomDialog(this,
+                "Hey! would you like to rate this App?",
+                "Please give 5 stars",
+                R.color.colorPrimary);  */
+
+        AndroidEasyRate.ShowCustomDialogWithCustomStars(this,
+                "Hey! would you like to rate this App?",
+                "Please give 5 stars",
+                R.color.colorPrimary,
+                R.drawable.starb);
+
     }
 }
